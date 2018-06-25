@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#370236</color>
+    <color name="colorPrimaryDark">#5619a5</color>
+    <color name="colorAccent">#7e09c2</color>
+
+    <color name="colorPrimary1">#e5370236</color>
+    <color name="colorPrimaryDark1">#d65619a5</color>
+    <color name="colorAccent1">#6c7e09c2</color>
+
+    <color name="text_color">#860209</color>
+    <color name="text_color2">#ffffff</color>
+    <color name="Sing_Up_BTN">#c604d4</color>
+    <color name="Sign_In_BTN">#c604d4</color>
+    <color name="BTN_shadow">#67016e</color>
+    <color name="Overlay_Background">#98ba61fa</color>
+    <color name="Overlay_ActionBar">#4f0054</color>
+    <color name="backgroundTintShoppingCart">#de8000cf</color>
+</resources>

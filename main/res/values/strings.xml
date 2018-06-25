@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Cosmo-Fox</string>
+    <string name="both_foxes">ImageView - Two Foxes</string>
+    <string name="text1">Cosmo-Fox</string>
+    <string name="Sign_In">Sign In</string>
+    <string name="Sign_Up">Sign Up</string>
+    <string name="Sign_Out">Sign Out</string>
+    <string name="Phone_Number">0981</string>
+    <string name="Password">1234</string>
+    <string name="Hint_Password">Password</string>
+    <string name="Hint_Phone_Number">Phone Number</string>
+    <string name="Hint_Name">Name</string>
+    <string name="title_activity_home">Home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Mike</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+</resources>
