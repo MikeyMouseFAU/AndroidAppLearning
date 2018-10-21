@@ -7,11 +7,16 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class MainActivity extends AppCompatActivity {
 
     Button btnSignIn, btnSignUp;
     TextView txtSlogan;
+    private FirebaseAuth mAuth;
 
 
 
@@ -19,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        mAuth = FirebaseAuth.getInstance();
 
 
         btnSignIn = findViewById(R.id.sign_in_button);
@@ -31,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
 
         txtSlogan.setTypeface(face);    // setting up font type
 
+
+//        ActiveUserCheck();
 
         btnSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,7 +53,20 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent signUp = new Intent(MainActivity.this,MySignUp.class);
                 startActivity(signUp);
+
+                //change to go to differnt activiyt testing     MySignUp -> CreateAccountActicity
             }
         });
     }
+
+    public void ActiveUserCheck(){
+
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+        if(currentUser != null)
+        {
+            startActivity(new Intent(this,Home.class));
+        }
+        return;
+    }
+
 }

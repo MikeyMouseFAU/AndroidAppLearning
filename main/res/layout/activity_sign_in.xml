@@ -36,20 +36,21 @@
         android:layout_centerVertical="true"
         android:orientation="vertical">
 
+
         <com.rengwuxian.materialedittext.MaterialAutoCompleteTextView
-            android:id="@+id/edtPhone"
+            android:id="@+id/edtEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:baselineAligned="false"
-            android:hint="@string/Hint_Phone_Number"
-            android:inputType="phone"
-            android:text="@string/Phone_Number"
+            android:hint="@string/Hint_Email"
+            android:inputType="text"
+            android:text="michalhus90@gmail.com"
             android:textColor="@android:color/black"
             android:textColorHint="@android:color/black"
-            android:textSize="36sp"
+            android:textSize="28sp"
             app:met_baseColor="@android:color/black"
             app:met_floatingLabel="highlight"
-            app:met_maxCharacters="12"
+            app:met_maxCharacters="30"
             app:met_primaryColor="@android:color/black"
             app:met_singleLineEllipsis="true" />
 
@@ -60,34 +61,87 @@
             android:baselineAligned="false"
             android:hint="@string/Hint_Password"
             android:inputType="textPassword"
-            android:text="@string/Password"
+            android:text="1234567890!"
             android:textColor="@android:color/black"
             android:textColorHint="@android:color/black"
-            android:textSize="36sp"
+            android:textSize="28sp"
             app:met_baseColor="@android:color/black"
             app:met_floatingLabel="highlight"
-            app:met_maxCharacters="12"
+            app:met_maxCharacters="20"
             app:met_primaryColor="@android:color/black"
             app:met_singleLineEllipsis="true" />
 
 
+
+
+
     </LinearLayout>
 
-    <Button
-        android:id="@+id/sign_in_button"
+
+
+    <LinearLayout
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="10dp"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:background="@drawable/my_button"
-        android:fontFamily="serif"
-        android:text="@string/Sign_In"
-        android:textAllCaps="false"
-        android:textColor="@color/text_color2"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        android:typeface="serif" />
+        android:layout_alignParentStart="true"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        >
+
+        <Button
+            android:id="@+id/sign_in_button_active"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="23dp"
+            android:background="@drawable/my_button"
+            android:fontFamily="serif"
+            android:text="@string/Sign_In"
+            android:textAllCaps="false"
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="serif"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            />
+
+
+        <TextView
+            android:id="@+id/sign_in_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/Sign_Up_Text"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            />
+
+        <Button
+            android:id="@+id/sign_up_button_in_sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/my_button"
+            android:fontFamily="serif"
+            android:text="@string/Sign_Up_Inactive"
+            android:textAllCaps="false"
+            android:textColor="@android:color/background_light"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:typeface="serif"
+
+            />
+
+
+    </LinearLayout>
+
 
 </RelativeLayout>

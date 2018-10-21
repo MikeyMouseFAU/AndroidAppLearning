@@ -13,18 +13,17 @@
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
     <TextView
+        android:id="@+id/txtFullName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="cursive"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
-        android:id="@+id/txtFullName"
         android:text="@string/nav_header_title"
         android:textAlignment="viewStart"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="@android:color/black"
         android:textSize="36sp"
         android:textStyle="bold"
-        android:typeface="serif"
-        />
+        android:typeface="serif" />
 
 </LinearLayout>
