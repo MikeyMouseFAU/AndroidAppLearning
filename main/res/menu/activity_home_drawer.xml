@@ -5,21 +5,22 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Import" />
+            android:id="@+id/nav_music_menu"
+            android:icon="@drawable/ic_menu_music"
+            android:title="Music" />
 
         <item
-            android:id="@+id/nav_slideshow"
-            android:icon="@drawable/ic_add_shopping_cart_black_24dp"
-            android:title="Order" />
+            android:id="@+id/nav_video_menu"
+            android:icon="@drawable/ic_menu_video"
+            android:title="Videos" />
         <item
-            android:id="@+id/nav_gallery"
-            android:icon="@drawable/ic_shopping_cart_black_24dp"
-            android:title="ShoppingCart" />
+            android:id="@+id/nav_gallery_menu"
+            android:icon="@drawable/ic_menu_gallery"
+
+            android:title="Pictures" />
         <item
-            android:id="@+id/nav_manage"
-            android:icon="@drawable/ic_exit_to_app_black_24dp"
+            android:id="@+id/nav_log_out"
+            android:icon="@drawable/ic_log_out"
             android:title="SignOut" />
     </group>
 

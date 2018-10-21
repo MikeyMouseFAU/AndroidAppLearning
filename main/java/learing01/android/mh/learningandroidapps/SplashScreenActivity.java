@@ -6,20 +6,24 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ImageView;
 
+
 public class SplashScreenActivity extends AppCompatActivity {
 
-    private ImageView img;
+//    private ImageView img;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash_screen);
-        //img = (ImageView) findViewById(R.id.img);
-       // img.post
+
+//        img = (ImageView) findViewById(R.id.img);
+//        img.post
+
+
 
         // Load the ImageView that will host the animation and
         // set its background to our AnimationDrawable XML resource.
-        ImageView img = (ImageView)findViewById(R.id.whack);
+        ImageView img = findViewById(R.id.whack);
         img.setBackgroundResource(R.drawable.run_animation);
 
         // Get the background, which has been compiled to an AnimationDrawable object.
@@ -34,8 +38,8 @@ public class SplashScreenActivity extends AppCompatActivity {
             @Override
             public void run() {
                 try {
-                    //super.run();
-                    sleep(8000);
+                    super.run();
+                    sleep(8000);              //THIS IS COMMENTED OUT FOR DEBUG PURPOSES
                 }catch(Exception e)
                 {
                     e.printStackTrace();
